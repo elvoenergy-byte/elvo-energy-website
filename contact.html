@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Elvo Energy</title>
+<meta name="description" content="Send Elvo Energy an enquiry about solar panels, batteries or heat pumps in Victoria — homeowners, businesses and installer partners welcome.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="wrap" style="justify-content:center;">
+    <span class="tb-tagline">Victoria-wide · Solar Homes Program specialists — we'll call you back</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="nav-row">
+    <a href="index.html" class="brand">Elvo<span>Energy</span></a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rebates.html">Rebates</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="nav-cta">Calculate My Solar Savings</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow-mark">Get in touch</span>
+    <h1>Tell us what you're weighing up.</h1>
+    <p>Homeowner, business or installer partner — fill in the form with your phone number and we'll call you back.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap form-wrap">
+    <div>
+      <form class="enquiry" name="enquiry" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="enquiry">
+        <p style="display:none;">
+          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+        </p>
+
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="So we can call you back" required>
+        </div>
+
+        <div class="field">
+          <label for="best_time">Best time to call</label>
+          <select id="best_time" name="best_time">
+            <option>Morning (9am–12pm)</option>
+            <option>Afternoon (12pm–4pm)</option>
+            <option>Evening (4pm–6pm)</option>
+            <option>Anytime</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>I'm getting in touch as a…</label>
+          <div class="radio-group">
+            <label class="radio-opt"><input type="radio" name="enquirer_type" value="Homeowner" checked> Homeowner</label>
+            <label class="radio-opt"><input type="radio" name="enquirer_type" value="Business"> Business</label>
+            <label class="radio-opt"><input type="radio" name="enquirer_type" value="Installer partner"> Installer partner</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="interest">Interested in</label>
+          <select id="interest" name="interest">
+            <option>Solar panels</option>
+            <option>Solar battery</option>
+            <option>Heat pump</option>
+            <option>More than one of these</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="postcode">Postcode</label>
+          <input type="text" id="postcode" name="postcode" inputmode="numeric" autocomplete="postal-code" placeholder="e.g. 3000">
+        </div>
+
+        <div class="field">
+          <label for="document">Upload a quote or power bill (optional)</label>
+          <input type="file" id="document" name="document" accept=".pdf,.jpg,.jpeg,.png">
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us a bit about your home or business, and anything you'd like us to know."></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-primary">Calculate My Solar Savings</button>
+        </div>
+
+        <div class="form-status" role="status"></div>
+      </form>
+    </div>
+
+    <aside class="contact-side">
+      <div class="item">
+        <h3>How we'll respond</h3>
+        <p>We'll call you back on the number you leave — no need to check your inbox.</p>
+      </div>
+      <div class="item">
+        <h3>Coverage area</h3>
+        <p>Homeowners and businesses across Victoria, in partnership with our local installer.</p>
+      </div>
+      <div class="item">
+        <h3>Response time</h3>
+        <p>We call most enquiries back within one to two business days.</p>
+      </div>
+      <div class="item">
+        <h3>Installer partners</h3>
+        <p>If you're an installer interested in receiving enquiries from us, select "Installer partner" above and tell us a bit about your business.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <div>
+      <a href="index.html" class="brand">Elvo<span>Energy</span></a>
+      <p class="footer-note">Independent solar, battery and heat pump guidance for homeowners and businesses across Victoria. Installation is carried out by our local partner installer.</p>
+      <p class="footer-note">Already a customer with a question? Email <a href="mailto:elvoenergy@zohomail.in">elvoenergy@zohomail.in</a> — we'll respond within a business day.</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="rebates.html">Rebates</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
