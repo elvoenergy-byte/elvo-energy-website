@@ -485,3 +485,21 @@ document.addEventListener('DOMContentLoaded', function () {
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", safeInit);
   else safeInit();
 })();
+/* Ella layout fixes */
+(function () {
+  function fixElla() {
+    var s = document.createElement("style");
+    s.textContent = "html,body{overflow-x:clip}#ella-root .ella-teaser{max-width:min(230px,calc(100vw - 100px))}";
+    document.head.appendChild(s);
+
+    var t = document.querySelector("#ella-root .ella-teaser");
+    if (!t) return;
+    new MutationObserver(function () {
+      if (t.classList.contains("show")) {
+        setTimeout(function () { t.classList.remove("show"); }, 8000);
+      }
+    }).observe(t, { attributes: true, attributeFilter: ["class"] });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", fixElla);
+  else fixElla();
+})();
