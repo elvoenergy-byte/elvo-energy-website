@@ -650,3 +650,5 @@ form.enquiry { display: grid; gap: 18px; }
   opacity: 0.35;
   pointer-events: none;
 }
+/* Stop sideways overflow on phones */
+html, body { overflow-x: clip; max-width: 100%; }
