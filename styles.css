@@ -654,4 +654,6 @@ form.enquiry { display: grid; gap: 18px; }
 html, body { overflow-x: clip; max-width: 100%; }.page-head .btn { margin: 0 8px 12px 0; }
 @media (max-width: 640px) {
   .slide-arrow { display: none; }
+}@media (max-width: 720px) {
+  .hero-figures { grid-template-columns: 1fr !important; }
 }
