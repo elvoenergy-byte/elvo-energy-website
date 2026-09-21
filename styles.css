@@ -657,3 +657,5 @@ html, body { overflow-x: clip; max-width: 100%; }.page-head .btn { margin: 0 8px
 }@media (max-width: 720px) {
   .hero-figures { grid-template-columns: 1fr !important; }
 }
+.brand{display:inline-flex;align-items:center}
+.brand::before{content:"";width:40px;height:40px;margin-right:10px;background:url("elvo-logo.png") center/contain no-repeat;border-radius:50%}
