@@ -660,3 +660,5 @@ html, body { overflow-x: clip; max-width: 100%; }.page-head .btn { margin: 0 8px
 .brand{display:inline-flex;align-items:center}
 .brand::before{content:"";width:40px;height:40px;margin-right:10px;background:url("elvo-logo.png") center/contain no-repeat;border-radius:50%}
 html, body { max-width: 100%; overflow-x: hidden; }
+* { box-sizing: border-box; }
+p, h1, h2, h3, li, a { overflow-wrap: break-word; word-break: break-word; }
