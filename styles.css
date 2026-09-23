@@ -662,3 +662,4 @@ html, body { overflow-x: clip; max-width: 100%; }.page-head .btn { margin: 0 8px
 html, body { max-width: 100%; overflow-x: hidden; }
 * { box-sizing: border-box; }
 p, h1, h2, h3, li, a { overflow-wrap: break-word; word-break: break-word; }
+.form-wrap > div, .form-wrap > aside { min-width: 0; }
